@@ -4,7 +4,31 @@
 // // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emette un messaggio in console con il numero della cella cliccata.
 
 
-// prima di tutto definisco il container
+// Definisco il bottone che apre la griglia
+
+const btn = document.getElementById("btn")
+
+// creo l'elemento bottone per la funzione
+
+
+btn.addEventListener ("click"
+
+// Creo la funzione relativa al bottone
+
+    function(){
+
+        contenitore.innerHTML = '';
+
+        console.clear();
+    }
+
+
+
+
+)
+
+
+// Definisco il container
 
 const myContainer = document.getElementById("container");
 
@@ -25,6 +49,9 @@ for (let i = 1; i <= 100; i++ ){
         function() {
             // toggle mi permette di aggiungere o togliere l'elemento aggiunto ad ogni click
             nuovoElemento.classList.toggle("clicked");
+
+            // Visualizzare in console la cella cliccata
+            console.log("Cella:", i);
         }
 
     )

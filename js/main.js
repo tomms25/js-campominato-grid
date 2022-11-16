@@ -4,3 +4,41 @@
 // // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
 
+// prima di tutto definisco il container
+
+const myContainer = document.getElementById("container");
+
+console.log(myContainer);
+
+
+// Creazione della griglia 10x10 tramite ciclo for e funzione
+// Inizio dal ciclo for
+
+for (let i = 1; i <= 100; i++ ){
+
+    // creo l'elemento per la funzione
+    let nuovoElemento = createBoxGrid();
+
+    myContainer.appendChild(nuovoElemento);
+    myContainer.innerHTML += '<div class="celle">' + i + '</div>';
+
+
+
+}
+
+
+// Funzione
+
+function createBoxGrid (){
+
+    // Creare un elemento div e la sua classe relativa
+    const elementBox = document.createElement("div");
+
+    elementBox.classList.add("celle");
+    // console.log(elementBox);
+
+
+    // ritornarlo
+    return elementBox;
+
+}

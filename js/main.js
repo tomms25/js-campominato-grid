@@ -11,21 +11,15 @@ const btn = document.getElementById("btn")
 // creo l'elemento bottone per la funzione
 
 
-btn.addEventListener ("click"
+btn.addEventListener ("click");
 
 // Creo la funzione relativa al bottone
 
-    function(){
+function() {
 
-        contenitore.innerHTML = '';
-
-        console.clear();
-    }
-
-
-
-
-)
+    contenitore.innerHTML = '';
+    console.clear();
+}
 
 
 // Definisco il container

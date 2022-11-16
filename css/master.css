@@ -51,7 +51,7 @@ main{
     justify-content: center;
     margin: 0 auto;
     background-color: #7fffd4;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 
@@ -63,4 +63,30 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.celle.clicked{
+    background-color: azure;
+}
+
+
+
+
+/* Footer */
+
+.madeby{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    padding: 20px;
+
+}
+
+.madeby h4, i, a {
+    font-size: 25px;
+    text-decoration: none;
+
 }
